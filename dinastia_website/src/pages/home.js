@@ -3,13 +3,10 @@ import '../App.css';
 
 const HomePage = () => {
     return (
-        <div style={{backgroundColor: 'gray'}}>
-            <p>
-              Página Teste .
-            </p>
-          
+        <div>
+            teste
         </div>
-      )
+    )
 }
 
 export default HomePage
