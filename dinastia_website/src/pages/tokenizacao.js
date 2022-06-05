@@ -1,10 +1,14 @@
 import React from "react";
+import Image from '../celular.jpg'
 
 const Tokenizacao = () => {
     return (
-        <div style={{paddingBottom: '10vh'}}>
-            <div style={{ display: "flex", border: 'solid', marginLeft: '5vw', marginRight: '5vw', 
-                justifyContent: 'space-between', paddingBottom: '5vh' }}>
+        <div style={{ paddingBottom: '10vh', marginLeft: '5vw', marginRight: '5vw' }}>
+            <div style={{
+                display: "flex", borderRadius: '20px 20px',
+                justifyContent: 'space-between', paddingBottom: '5vh', color: 'white',
+                backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
+            }}>
                 <div style={{ width: '40vw' }}>
                     <div style={{ padding: '1vw' }}>
                         <h4>Credito de carbono</h4>
@@ -38,26 +42,39 @@ const Tokenizacao = () => {
                     </div>
                 </div>
             </div>
-            <div style={{marginLeft: '5vw', marginRight: '5vw'}}>
+            <div style={{
+                borderRadius: '20px 20px', backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
+                , paddingBottom: '5vh', color: 'white', padding: '5vh', marginTop: '5vh'
+            }}>
                 <h3>Por que tokenizar seus créditos?</h3>
                 O processo de tokenização oferece vantagens uma série de vantagens para o emissor.
-                <br/><br/>
-                Por meio da tokenização, seus créditos podem ser negociados com maior agilidade e facilidade, 
+                <br /><br />
+                Por meio da tokenização, seus créditos podem ser negociados com maior agilidade e facilidade,
                 e a qualquer dia e hora, já que o mercado de tokens é ininterrupto.
-                <br/><br/>
+                <br /><br />
                 Além disso, a segurança dos seus créditos é garantida pela blockchain, por exemplo.
-                <br/><br/>
-                Por meio dos smart contracts, a blockchain garante a validação jurídica das transações e assegura que elas 
+                <br /><br />
+                Por meio dos smart contracts, a blockchain garante a validação jurídica das transações e assegura que elas
                 serão executadas de forma correta, sem a necessidade de envolver uma terceira parte na negociação.
-                <br/><br/>
+                <br /><br />
                 E, já que a tokenização não envolve outras instituições e pessoas, a transação se torna:
-                <br/>•    mais ágil
-                <br/>•    mais barata (pois não envolve o pagamento de diversas taxas) 
-                <br/>•    menos burocrática
-                <br/><br/>
+                <br />•    mais ágil
+                <br />•    mais barata (pois não envolve o pagamento de diversas taxas)
+                <br />•    menos burocrática
+                <br /><br />
                 Quer tokenizar seus créditos? Venha conosco!
             </div>
-        </div>
+            <div style={{ display: 'flex', height: '70vh', width: '100%', justifyContent: "center", marginTop: '5vh' }}>
+                <div style={{ height: '20px', width: '20%', marginTop: '10%' }}>
+                    <button>
+                        Tokenize-se
+                    </button>
+                </div>
+                <div style={{ width: '25%' }}>
+                    <img src={Image} width='100%' height='100%' />
+                </div>
+            </div>
+        </div >
     )
 }
 

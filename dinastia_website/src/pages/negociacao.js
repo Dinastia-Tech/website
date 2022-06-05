@@ -2,40 +2,40 @@ import React, { useState } from "react";
 import Select from 'react-select'
 
 const Negocicacao = () => {
-    const [valorCompra, setValorCompra] = useState()
-    const [valorVenda, setValorVenda] = useState()
-    const [saldoCarteira, setSaldoCarteira] = useState(0)
+    const saldoCarteira = 1200
+    const comprados = 500
+    const compensados = 300
+    const disponiveis = 600
+
     const [distribuidora, setDistribuidora] = useState()
     const [kwh, setKwh] = useState()
+    const [prazo, setPrazo] = useState()
 
     return (
         <div style={{ paddingLeft: '10vw', paddingRight: '10vw', paddingBottom: '10vh' }}>
-            <div style={{ border: 'solid', borderWidth: '2px', padding: '2vh' }}>
+            <div style={{
+                padding: '2vh', borderRadius: '20px 20px', color: 'white',
+                backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
+            }}>
                 <div>
                     <h4 style={{ textAlign: 'center' }}>Créditos de Carbono</h4>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', width: '50vw' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-around', width: '50vw' }}>
                         <div>
-                            Comprar:
-                            <input
-                                value={valorCompra}
-                                onChange={e => setValorCompra(e.target.value)}
-                                className="form-control"
-                            />
+                            <button>
+                                Comprar
+                            </button>
                         </div>
                         <div>
-                            Vender:
-                            <input
-                                value={valorVenda}
-                                onChange={e => setValorVenda(e.target.value)}
-                                className="form-control"
-                            />
+                            <button>
+                                Vender
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div style={{ marginTop: '5vh', padding: '2vh' }}>
                     <h4>Minha Carteira</h4>
                     <div style={{ marginBottom: '5vh' }}>
-                        Valor atual da carteira: R$
+                        Valor atual tokenizado da carteira: R$
                         <input
                             style={{ marginLeft: '2vw' }}
                             value={saldoCarteira}
@@ -46,7 +46,7 @@ const Negocicacao = () => {
                         Créditos de carbono comprados:
                         <input
                             style={{ marginLeft: '2vw' }}
-                            value={saldoCarteira}
+                            value={comprados}
                             disabled={true}
                         />
                     </div>
@@ -54,7 +54,7 @@ const Negocicacao = () => {
                         Créditos de carbono compensados:
                         <input
                             style={{ marginLeft: '2vw' }}
-                            value={saldoCarteira}
+                            value={compensados}
                             disabled={true}
                         />
                     </div>
@@ -62,45 +62,55 @@ const Negocicacao = () => {
                         Créditos de carbono disponíveis:
                         <input
                             style={{ marginLeft: '2vw' }}
-                            value={saldoCarteira}
+                            value={disponiveis}
                             disabled={true}
                         />
                     </div>
 
                 </div>
             </div>
-            <div style={{ border: 'solid', borderWidth: '2px', marginTop: '5vh', padding: '2vh' }}>
-                <h4 style={{textAlign: 'center'}}>Mercado Livre de Energia</h4>
-                <div style={{width: '40vw'}}>
-                    Distribuidora de energia
+            <div style={{
+                marginTop: '5vh', padding: '2vh', borderRadius: '20px 20px', color: 'white',
+                backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
+            }}>
+                <h4 style={{ textAlign: 'center' }}>Mercado Livre de Energia</h4>
+                <div style={{ width: '40vw', color: 'black' }}>
+                    <div style={{ color: 'white' }}>
+                        Distribuidora de energia
+                    </div>
                     <Select
-                        style={{height: '10px'}}
-                        value={{value: distribuidora, label: distribuidora}}
+                        style={{ height: '10px' }}
+                        value={{ value: distribuidora, label: distribuidora }}
                         onChange={e => setDistribuidora(e.value)}
                         options={[
-                            {value: 'brasilER',label: 'Brasil Elétrica Renovável'},
-                            {value: 'energiaBrasil',label: 'Energia do Brasil'},
-                            {value: 'engie',label: 'Engie'}
+                            { value: 'brasilER', label: 'Brasil Elétrica Renovável' },
+                            { value: 'energiaBrasil', label: 'Energia do Brasil' },
+                            { value: 'engie', label: 'Engie' }
                         ]}
                     />
                 </div>
-                <div style={{width: '40vw', marginTop: '5vh'}}>
+                <div style={{ width: '40vw', marginTop: '5vh' }}>
                     Total em kWh
                     <input
-                        style={{marginLeft: '2vw'}}
+                        style={{ marginLeft: '2vw' }}
                         className="form-control"
                         value={kwh}
                         onChange={e => setKwh(e.target.value)}
                     />
                 </div>
-                <div style={{width: '40vw', marginTop: '5vh'}}>
+                <div style={{ width: '40vw', marginTop: '5vh' }}>
                     Prazo do contrato
                     <input
-                        style={{marginLeft: '2vw'}}
+                        style={{ marginLeft: '2vw' }}
                         className="form-control"
-                        value={kwh}
-                        onChange={e => setKwh(e.target.value)}
+                        value={prazo}
+                        onChange={e => setPrazo(e.target.value)}
                     />
+                    <div style={{ marginLeft: '30vw' }}>
+                        <button>
+                            Entre em contato
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
