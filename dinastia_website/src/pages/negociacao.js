@@ -80,8 +80,8 @@ const Negocicacao = () => {
                     </div>
                     <Select
                         style={{ height: '10px' }}
-                        value={{ value: distribuidora, label: distribuidora }}
-                        onChange={e => setDistribuidora(e.value)}
+                        value={distribuidora}
+                        onChange={setDistribuidora}
                         options={[
                             { value: 'brasilER', label: 'Brasil Elétrica Renovável' },
                             { value: 'energiaBrasil', label: 'Energia do Brasil' },

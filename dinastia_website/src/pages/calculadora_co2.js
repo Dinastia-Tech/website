@@ -99,8 +99,8 @@ const Calculadora = () => {
                                 Selecione o setor:
                             </div>
                             <Select
-                                value={{ value: setor, label: setor }}
-                                onChange={e => setSetor(e.value)}
+                                value={setor}
+                                onChange={setSetor}
                                 options={[
                                     { value: 'transporte', label: 'Transportes' },
                                     { value: 'industria', label: 'Indústrias' },
@@ -118,8 +118,8 @@ const Calculadora = () => {
                                 Selecione o estado:
                             </div>
                             <Select
-                                value={{ value: estado, label: estado }}
-                                onChange={e => setEstado(e.value)}
+                                value={estado}
+                                onChange={setEstado}
                                 options={[
                                     { value: 'AC', label: 'AC' }, { value: 'AL', label: 'AL' },
                                     { value: 'AP', label: 'AP' }, { value: 'AM', label: 'AM' },
@@ -144,8 +144,8 @@ const Calculadora = () => {
                                 selecione o tamanho:
                             </div>
                             <Select
-                                value={{ value: porte, label: porte }}
-                                onChange={e => setPorte(e.value)}
+                                value={porte}
+                                onChange={setPorte}
                                 options={[
                                     { value: 'pequeno', label: 'Menor que 100 funcionários' },
                                     { value: 'medio', label: 'Entre 100 e 500 funcionários' },
@@ -158,7 +158,7 @@ const Calculadora = () => {
                 <button
                     onClick={() => {
                         if (setor && porte && estado) {
-                            calculaResultado(setor, estado, porte)
+                            calculaResultado(setor.value, estado.value, porte.value)
                         }
                     }}
                     className="form-control"
