@@ -18,7 +18,7 @@ const Negocicacao = () => {
                 backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
             }}>
                 <div>
-                    <h4 style={{ textAlign: 'center' }}>Créditos de Carbono</h4>
+                    <h1 style={{ textAlign: 'center' }}>Créditos de Carbono</h1>
                     <div style={{ display: 'flex', justifyContent: 'space-around', width: '50vw' }}>
                         <div>
                             <button>
@@ -73,7 +73,7 @@ const Negocicacao = () => {
                 marginTop: '5vh', padding: '2vh', borderRadius: '20px 20px', color: 'white',
                 backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
             }}>
-                <h4 style={{ textAlign: 'center' }}>Mercado Livre de Energia</h4>
+                <h1 style={{ textAlign: 'center' }}>Mercado Livre de Energia</h1>
                 <div style={{ width: '40vw', color: 'black' }}>
                     <div style={{ color: 'white' }}>
                         Distribuidora de energia
