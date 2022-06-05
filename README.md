@@ -8,3 +8,16 @@ ou
 ```npm start ```
 
 #### A página é composta por 4 abas: Home, Calculadora, Tokenização e Negociação. As quais são navegáveis através do menu superior ou eventuais link dentro das páginas 
+
+
+Participantes :
+
+-Beatriz Conceição da Costa
+
+-José Machado
+
+-Murilo Torres Andrade
+
+-Pietro Prevatto
+
+-Richard Sousa Antunes
