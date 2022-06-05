@@ -1,18 +1,24 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './navbar';
+import Calculadora from './pages/calculadora_co2';
 import HomePage from "./pages/home";
-import Page2 from './pages/page2';
+import Negocicacao from './pages/negociacao';
+import Tokenizacao from './pages/tokenizacao';
 
 function App() {
 
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path='home' element={<HomePage />} />
-        <Route path="page2" element={<Page2 />} />
-      </Routes>
+      <div style={{marginTop: '5vh'}}>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path="tokenizacao" element={<Tokenizacao />} />
+          <Route path="negociacao" element={<Negocicacao />} />
+          <Route path="calculadora" element={<Calculadora />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }
