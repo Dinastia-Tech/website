@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.073c9b0a.css",
+    "main.js": "/website/static/js/main.8dad3cf4.js",
+    "static/js/787.03f3c2f0.chunk.js": "/website/static/js/787.03f3c2f0.chunk.js",
+    "static/media/image2.jpeg": "/website/static/media/image2.38a6c06a38c5a9090405.jpeg",
+    "static/media/image3.jpg": "/website/static/media/image3.3cbbcf9e4c0a7cb4d212.jpg",
+    "static/media/token.png": "/website/static/media/token.2424311307e5cc330c91.png",
+    "static/media/image5.cms": "/website/static/media/image5.cb0c2cde49ae3f346448.cms",
+    "static/media/image5.jpg": "/website/static/media/image5.5fbc75f31b74c8ce3a80.jpg",
+    "static/media/mercado_livre.png": "/website/static/media/mercado_livre.d7dae32fde1b82e1f6c7.png",
+    "static/media/calculator.png": "/website/static/media/calculator.bd4bf2176fa02fae88e7.png",
+    "static/media/celular.jpg": "/website/static/media/celular.b34531fe89cf952ea12b.jpg",
+    "index.html": "/website/index.html",
+    "main.073c9b0a.css.map": "/website/static/css/main.073c9b0a.css.map",
+    "main.8dad3cf4.js.map": "/website/static/js/main.8dad3cf4.js.map",
+    "787.03f3c2f0.chunk.js.map": "/website/static/js/787.03f3c2f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8dad3cf4.js"
+  ]
+}
