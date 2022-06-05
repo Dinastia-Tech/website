@@ -21,10 +21,11 @@ const HomePage = () => {
                 <h5>Plataforma one-stop-shop para o mercado de energia e crédito de carbono.</h5>
             </div>
             <div style={{
-                display: 'flex', height: '30vh', alignItems: 'center', marginLeft: '5vw',
-                marginTop: '5vh', marginRight: '5vw'
+                display: 'flex', height: '10vh', alignItems: 'center', marginLeft: '5vw', color: 'white',
+                marginTop: '5vh', marginRight: '5vw', borderRadius: '20px 20px', paddingLeft: '5vh',
+                backgroundImage: "linear-gradient(to bottom right, #98FB98, #2E8B57)"
             }}>
-                Processo rápido, simples e seguro. Na EnergyOne, estabelecemos etapas simples com o próposito de facilitar a negociação B2B.
+                <h4>Processo rápido, simples e seguro. Na EnergyOne, estabelecemos etapas simples com o próposito de facilitar a negociação B2B.</h4>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', height: '30vh', alignItems: 'center', marginTop: '10vh' }}>
                 <div style={{
@@ -38,7 +39,7 @@ const HomePage = () => {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', marginTop: '5vh', }}>
                         <div style={{ width: '100%' }}>
-                            Calcule sua pegada de carbono
+                            <h4>Calcule sua pegada de carbono</h4>
                         </div>
                     </div>
                 </div>
@@ -53,7 +54,7 @@ const HomePage = () => {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', marginTop: '5vh' }}>
                         <div style={{ width: '100%' }}>
-                            Tokenize seus ativos
+                            <h4>Tokenize seus ativos</h4>
                         </div>
                     </div>
                 </div>
@@ -68,7 +69,7 @@ const HomePage = () => {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', marginTop: '5vh' }}>
                         <div style={{ width: '100%' }}>
-                            negocie seus créditos de carbono e compre mais energia para seu negócio.
+                            <h4>Negocie seus créditos de carbono e compre mais energia para seu negócio.</h4>
                         </div>
                     </div>
                 </div>

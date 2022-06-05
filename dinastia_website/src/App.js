@@ -9,7 +9,7 @@ import Tokenizacao from './pages/tokenizacao';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
       <div style={{marginTop: '5vh'}}>
         <Routes>
