@@ -106,8 +106,8 @@ const Calculadora = () => {
                                     { value: 'industria', label: 'Indústrias' },
                                     { value: 'varejo', label: 'Varejo' },
                                     { value: 'tecnologia', label: 'Tecnologia' },
-                                    { value: 'agropecuaria', label: 'agropecuária' },
-                                    { value: 'servicos', label: 'serviços' }
+                                    { value: 'agropecuaria', label: 'Agropecuária' },
+                                    { value: 'servicos', label: 'Serviços' }
                                 ]}
                             />
                         </div>
